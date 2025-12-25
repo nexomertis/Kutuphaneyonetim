@@ -1,0 +1,439 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\views\\hesap\\kayitol.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\views\\hesap\\kayitol.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\controllers\\hesapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\controllers\\hesapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\controllers\\kitaplarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\controllers\\kitaplarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\migrations\\kutuphaneyyonetimdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\migrations\\kutuphaneyyonetimdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\migrations\\k\u00FCt\u00FCphanedbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\migrations\\k\u00FCt\u00FCphanedbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\controllers\\\u00F6d\u00FCn\u00E7kay\u0131tlar\u0131controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\controllers\\\u00F6d\u00FCn\u00E7kay\u0131tlar\u0131controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\data\\k\u00FCt\u00FCphanedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\data\\k\u00FCt\u00FCphanedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\models\\kullan\u0131c\u0131.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\models\\kullan\u0131c\u0131.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\views\\kitaplar\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\views\\kitaplar\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\models\\kitap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\models\\kitap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\views\\\u00F6d\u00FCn\u00E7kay\u0131tlar\u0131\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\views\\\u00F6d\u00FCn\u00E7kay\u0131tlar\u0131\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\views\\kitaplar\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\views\\kitaplar\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\controllers\\\u00FCyelercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\controllers\\\u00FCyelercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\views\\\u00F6d\u00FCn\u00E7kay\u0131tlar\u0131\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\views\\\u00F6d\u00FCn\u00E7kay\u0131tlar\u0131\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\views\\kitaplar\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\views\\kitaplar\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\views\\kitaplar\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\views\\kitaplar\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\views\\\u00F6d\u00FCn\u00E7kay\u0131tlar\u0131\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\views\\\u00F6d\u00FCn\u00E7kay\u0131tlar\u0131\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\models\\\u00F6d\u00FCn\u00E7kayd\u0131.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\models\\\u00F6d\u00FCn\u00E7kayd\u0131.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\views\\\u00F6d\u00FCn\u00E7kay\u0131tlar\u0131\\\u00FCyege\u00E7mi\u015Fi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\views\\\u00F6d\u00FCn\u00E7kay\u0131tlar\u0131\\\u00FCyege\u00E7mi\u015Fi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\models\\\u00FCye.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\models\\\u00FCye.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|c:\\users\\mert_\\onedrive\\desktop\\web developer\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\k\u00FCt\u00FCphane y\u00F6netim\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A3DEDA2-CE45-4E73-B23A-57EF88AC7DDA}|K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj|solutionrelative:k\u00FCt\u00FCphane y\u00F6netim\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "KayitOl.cshtml",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Views\\Hesap\\KayitOl.cshtml",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Views\\Hesap\\KayitOl.cshtml",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Views\\Hesap\\KayitOl.cshtml",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Views\\Hesap\\KayitOl.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAmwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-25T19:19:21.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Program.cs",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Program.cs",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Program.cs",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T19:10:19.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "KitaplarController.cs",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Controllers\\KitaplarController.cs",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Controllers\\KitaplarController.cs",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Controllers\\KitaplarController.cs",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Controllers\\KitaplarController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T10:38:43.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T20:51:24.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HesapController.cs",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Controllers\\HesapController.cs",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Controllers\\HesapController.cs",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Controllers\\HesapController.cs",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Controllers\\HesapController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAADwvzEAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T10:18:33.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "KutuphaneyYonetimDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Migrations\\KutuphaneyYonetimDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Migrations\\KutuphaneyYonetimDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Migrations\\KutuphaneyYonetimDbContextModelSnapshot.cs",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Migrations\\KutuphaneyYonetimDbContextModelSnapshot.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAgwAwAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T21:03:39.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "K\u00FCt\u00FCphaneDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Migrations\\K\u00FCt\u00FCphaneDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Migrations\\K\u00FCt\u00FCphaneDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Migrations\\K\u00FCt\u00FCphaneDbContextModelSnapshot.cs",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Migrations\\K\u00FCt\u00FCphaneDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T16:08:36.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "\u00D6d\u00FCn\u00E7Kay\u0131tlar\u0131Controller.cs",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Controllers\\\u00D6d\u00FCn\u00E7Kay\u0131tlar\u0131Controller.cs",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Controllers\\\u00D6d\u00FCn\u00E7Kay\u0131tlar\u0131Controller.cs",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Controllers\\\u00D6d\u00FCn\u00E7Kay\u0131tlar\u0131Controller.cs",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Controllers\\\u00D6d\u00FCn\u00E7Kay\u0131tlar\u0131Controller.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwDAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T20:51:31.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Data\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Data\\DbInitializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T16:08:07.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "K\u00FCt\u00FCphaneDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Data\\K\u00FCt\u00FCphaneDbContext.cs",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Data\\K\u00FCt\u00FCphaneDbContext.cs",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Data\\K\u00FCt\u00FCphaneDbContext.cs",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Data\\K\u00FCt\u00FCphaneDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T20:51:37.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Kullan\u0131c\u0131.cs",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Models\\Kullan\u0131c\u0131.cs",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Models\\Kullan\u0131c\u0131.cs",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Models\\Kullan\u0131c\u0131.cs",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Models\\Kullan\u0131c\u0131.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T21:03:34.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "K\u00FCt\u00FCphane Y\u00F6netim.csproj.user",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj.user",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj.user",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj.user",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim.csproj.user",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2025-12-24T21:01:58.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Views\\Kitaplar\\Index.cshtml",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Views\\Kitaplar\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Views\\Kitaplar\\Index.cshtml",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Views\\Kitaplar\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-18T16:41:23.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "\u00DCyelerController.cs",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Controllers\\\u00DCyelerController.cs",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Controllers\\\u00DCyelerController.cs",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Controllers\\\u00DCyelerController.cs",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Controllers\\\u00DCyelerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T20:51:33.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Views\\\u00D6d\u00FCn\u00E7Kay\u0131tlar\u0131\\Index.cshtml",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Views\\\u00D6d\u00FCn\u00E7Kay\u0131tlar\u0131\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Views\\\u00D6d\u00FCn\u00E7Kay\u0131tlar\u0131\\Index.cshtml",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Views\\\u00D6d\u00FCn\u00E7Kay\u0131tlar\u0131\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-18T16:09:03.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Views\\\u00D6d\u00FCn\u00E7Kay\u0131tlar\u0131\\Create.cshtml",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Views\\\u00D6d\u00FCn\u00E7Kay\u0131tlar\u0131\\Create.cshtml",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Views\\\u00D6d\u00FCn\u00E7Kay\u0131tlar\u0131\\Create.cshtml",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Views\\\u00D6d\u00FCn\u00E7Kay\u0131tlar\u0131\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-18T16:41:25.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Kitap.cs",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Models\\Kitap.cs",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Models\\Kitap.cs",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Models\\Kitap.cs",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Models\\Kitap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T21:30:47.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Views\\Kitaplar\\Edit.cshtml",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Views\\Kitaplar\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Views\\Kitaplar\\Edit.cshtml",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Views\\Kitaplar\\Edit.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAAB4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-18T16:09:05.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Views\\Kitaplar\\Create.cshtml",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Views\\Kitaplar\\Create.cshtml",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Views\\Kitaplar\\Create.cshtml",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Views\\Kitaplar\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-18T16:41:24.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Views\\Kitaplar\\Delete.cshtml",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Views\\Kitaplar\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Views\\Kitaplar\\Delete.cshtml",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Views\\Kitaplar\\Delete.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwBoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-21T17:00:48.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Views\\\u00D6d\u00FCn\u00E7Kay\u0131tlar\u0131\\Delete.cshtml",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Views\\\u00D6d\u00FCn\u00E7Kay\u0131tlar\u0131\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Views\\\u00D6d\u00FCn\u00E7Kay\u0131tlar\u0131\\Delete.cshtml",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Views\\\u00D6d\u00FCn\u00E7Kay\u0131tlar\u0131\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-21T17:54:10.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "\u00D6d\u00FCn\u00E7Kayd\u0131.cs",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Models\\\u00D6d\u00FCn\u00E7Kayd\u0131.cs",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Models\\\u00D6d\u00FCn\u00E7Kayd\u0131.cs",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Models\\\u00D6d\u00FCn\u00E7Kayd\u0131.cs",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Models\\\u00D6d\u00FCn\u00E7Kayd\u0131.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T20:51:44.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "\u00DCyeGe\u00E7mi\u015Fi.cshtml",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Views\\\u00D6d\u00FCn\u00E7Kay\u0131tlar\u0131\\\u00DCyeGe\u00E7mi\u015Fi.cshtml",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Views\\\u00D6d\u00FCn\u00E7Kay\u0131tlar\u0131\\\u00DCyeGe\u00E7mi\u015Fi.cshtml",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Views\\\u00D6d\u00FCn\u00E7Kay\u0131tlar\u0131\\\u00DCyeGe\u00E7mi\u015Fi.cshtml",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Views\\\u00D6d\u00FCn\u00E7Kay\u0131tlar\u0131\\\u00DCyeGe\u00E7mi\u015Fi.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-21T16:52:52.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "\u00DCye.cs",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Models\\\u00DCye.cs",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Models\\\u00DCye.cs",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Models\\\u00DCye.cs",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Models\\\u00DCye.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T21:30:36.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\appsettings.json",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\appsettings.json",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\appsettings.json",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-18T11:43:18.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "K\u00FCt\u00FCphane Y\u00F6netim\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\mert_\\OneDrive\\Desktop\\web developer\\K\u00FCt\u00FCphane y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\K\u00FCt\u00FCphane Y\u00F6netim\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "K\u00FCt\u00FCphane Y\u00F6netim\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T20:51:22.989Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
