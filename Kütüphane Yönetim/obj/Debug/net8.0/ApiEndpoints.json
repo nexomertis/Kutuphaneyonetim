@@ -1,0 +1,204 @@
+[
+  {
+    "ContainingType": "KutuphaneyYonetim.Controllers.MatchingController",
+    "Method": "CompleteMatching",
+    "RelativePath": "api/Matching/complete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "KutuphaneyYonetim.Controllers.MatchingCompleteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KutuphaneyYonetim.Controllers.MatchingController",
+    "Method": "GetPairs",
+    "RelativePath": "api/Matching/pairs/{level}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "level",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KutuphaneyYonetim.Controllers.MatchingController",
+    "Method": "SubmitMatching",
+    "RelativePath": "api/Matching/submit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "KutuphaneyYonetim.Controllers.MatchingSubmitRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KutuphaneyYonetim.Controllers.PlayerController",
+    "Method": "GetAchievements",
+    "RelativePath": "api/Player/achievements/{playerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "playerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KutuphaneyYonetim.Controllers.PlayerController",
+    "Method": "CreatePlayer",
+    "RelativePath": "api/Player/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "KutuphaneyYonetim.Controllers.CreatePlayerRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KutuphaneyYonetim.Controllers.PlayerController",
+    "Method": "GetLeaderboard",
+    "RelativePath": "api/Player/leaderboard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KutuphaneyYonetim.Controllers.PlayerController",
+    "Method": "GetProfile",
+    "RelativePath": "api/Player/profile/{playerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "playerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KutuphaneyYonetim.Controllers.QuizController",
+    "Method": "CompleteQuiz",
+    "RelativePath": "api/Quiz/complete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "KutuphaneyYonetim.Controllers.QuizCompleteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KutuphaneyYonetim.Controllers.QuizController",
+    "Method": "GetQuestion",
+    "RelativePath": "api/Quiz/question/{level}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "level",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KutuphaneyYonetim.Controllers.QuizController",
+    "Method": "SubmitAnswer",
+    "RelativePath": "api/Quiz/submit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "KutuphaneyYonetim.Controllers.QuizAnswerRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KutuphaneyYonetim.Controllers.ScenarioController",
+    "Method": "CompleteScenario",
+    "RelativePath": "api/Scenario/complete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "KutuphaneyYonetim.Controllers.ScenarioCompleteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KutuphaneyYonetim.Controllers.ScenarioController",
+    "Method": "GetScenario",
+    "RelativePath": "api/Scenario/scenario/{level}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "level",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "KutuphaneyYonetim.Controllers.ScenarioController",
+    "Method": "SubmitAnswer",
+    "RelativePath": "api/Scenario/submit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "KutuphaneyYonetim.Controllers.ScenarioAnswerRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

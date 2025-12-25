@@ -1,0 +1,30 @@
+@model KutuphaneyYonetim.Models.Kitap
+
+@{
+    ViewData["Title"] = "Kitap Sil";
+}
+
+<h1>Kitap Sil</h1>
+
+<h3>Bu kitabı silmek istediğinizden emin misiniz?</h3>
+
+<div>
+    <h4>Kitap Bilgileri</h4>
+    <hr />
+    <dl class="row">
+     <dt class="col-sm-2">Başlık</dt>
+    <dd class="col-sm-10">@Model.Baslik</dd>
+     <dt class="col-sm-2">Yazar</dt>
+     <dd class="col-sm-10">@Model.Yazar</dd>
+     <dt class="col-sm-2">ISBN</dt>
+     <dd class="col-sm-10">@Model.ISBN</dd>
+     <dt class="col-sm-2">Toplam Kopya</dt>
+     <dd class="col-sm-10">@Model.ToplamKopya</dd>
+    </dl>
+</div>
+
+<form method="post">
+    <input type="hidden" name="id" value="@Model.Id" />
+    <button type="submit" class="btn btn-danger">Sil</button>
+    <a href="@Url.Action("Index")" class="btn btn-secondary">İptal</a>
+</form>

@@ -1,0 +1,30 @@
+@model KutuphaneyYonetim.Models.Kitap
+
+@{
+    ViewData["Title"] = "Yeni Kitap Ekle";
+}
+
+<h1>Yeni Kitap Ekle</h1>
+
+ <form method="post">
+     <div class="form-group">
+         <label for="Başlık">Kitap Başlığı</label>
+         <input type="text" class="form-control" id="Başlık" name="Baslik" required />
+     </div>
+     <div class="form-group">
+         <label for="Yazar">Yazar</label>
+         <input type="text" class="form-control" id="Yazar" name="Yazar" required />
+     </div>
+     <div class="form-group">
+         <label for="ISBN">ISBN</label>
+         <input type="text" class="form-control" id="ISBN" name="ISBN" required />
+     </div>
+     <div class="form-group">
+         <label for="ToplamKopya">Toplam Kopya</label> 
+         <input type="number" class="form-control" id="ToplamKopya" name="ToplamKopya" required />
+     </div>
+     <div class="form-group">
+         <button type="submit" class="btn btn-primary">Kaydet</button>
+         <a href="@Url.Action("Index")" class="btn btn-secondary">İptal</a>
+     </div>
+ </form>

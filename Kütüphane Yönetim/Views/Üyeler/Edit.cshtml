@@ -1,0 +1,31 @@
+@model KutuphaneyYonetim.Models.Üye
+
+@{
+    ViewData["Title"] = "Üye Düzenle";
+}
+
+<h1>Üye Düzenle</h1>
+
+<form method="post">
+    <input type="hidden" name="Id" value="@Model.Id">
+    <div class="form-group">
+        <label for="Ad">Ad</label>
+        <input type="text" class="form-control" id="Ad" name="Ad" value="@Model.Ad" required>
+    </div>
+    <div class="form-group">
+        <label for="Soyad">Soyadı</label>
+        <input type="text" class="form-control" id="Soyad" name="Soyad" value="@Model.Soyad" required>
+    </div>
+    <div class="form-group">
+        <label for="TelefonNumarası">Telefon Numarası</label>
+        <input type="tel" class="form-control" id="TelefonNumarası" name="TelefonNumarası" value="@Model.TelefonNumarası" required>
+    </div>
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" class="form-control" id="Email" name="Email" value="@Model.Email" required>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Güncelle</button>
+        <a href="@Url.Action("Index")" class="btn btn-secondary">İptal</a>
+    </div>
+</form>

@@ -1,0 +1,30 @@
+@model KutuphaneyYonetim.Models.Üye
+
+@{
+    ViewData["Title"] = "Yeni Üye Ekle";
+}
+
+<h1>Yeni Üye Ekle</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label for="Ad">Ad</label>
+        <input type="text" class="form-control" id="Ad" name="Ad" required>
+    </div>
+    <div class="form-group">
+        <label for="Soyad">Soyadı</label>
+        <input type="text" class="form-control" id="Soyad" name="Soyad" required>
+    </div>
+    <div class="form-group">
+        <label for="TelefonNumarası">Telefon Numarası</label>
+        <input type="tel" class="form-control" id="TelefonNumarası" name="TelefonNumarası" required>
+    </div>
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" class="form-control" id="Email" name="Email" required>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Kaydet</button>
+        <a href="@Url.Action("Index")" class="btn btn-secondary">İptal</a>
+    </div>
+</form>

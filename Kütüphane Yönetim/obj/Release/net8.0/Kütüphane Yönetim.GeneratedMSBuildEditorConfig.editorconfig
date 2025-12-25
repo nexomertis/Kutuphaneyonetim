@@ -1,0 +1,97 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = KutuphaneyYonetim
+build_property.RootNamespace = KutuphaneyYonetim
+build_property.ProjectDir = C:\Users\mert_\OneDrive\Desktop\web developer\Kütüphane yönetim\Kütüphane Yönetim\Kütüphane Yönetim\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\mert_\OneDrive\Desktop\web developer\Kütüphane yönetim\Kütüphane Yönetim\Kütüphane Yönetim
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/mert_/OneDrive/Desktop/web developer/Kütüphane yönetim/Kütüphane Yönetim/Kütüphane Yönetim/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mert_/OneDrive/Desktop/web developer/Kütüphane yönetim/Kütüphane Yönetim/Kütüphane Yönetim/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mert_/OneDrive/Desktop/web developer/Kütüphane yönetim/Kütüphane Yönetim/Kütüphane Yönetim/Views/Kitaplar/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2l0YXBsYXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mert_/OneDrive/Desktop/web developer/Kütüphane yönetim/Kütüphane Yönetim/Kütüphane Yönetim/Views/Kitaplar/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2l0YXBsYXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mert_/OneDrive/Desktop/web developer/Kütüphane yönetim/Kütüphane Yönetim/Kütüphane Yönetim/Views/Kitaplar/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2l0YXBsYXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mert_/OneDrive/Desktop/web developer/Kütüphane yönetim/Kütüphane Yönetim/Kütüphane Yönetim/Views/Kitaplar/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2l0YXBsYXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mert_/OneDrive/Desktop/web developer/Kütüphane yönetim/Kütüphane Yönetim/Kütüphane Yönetim/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mert_/OneDrive/Desktop/web developer/Kütüphane yönetim/Kütüphane Yönetim/Kütüphane Yönetim/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mert_/OneDrive/Desktop/web developer/Kütüphane yönetim/Kütüphane Yönetim/Kütüphane Yönetim/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mert_/OneDrive/Desktop/web developer/Kütüphane yönetim/Kütüphane Yönetim/Kütüphane Yönetim/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mert_/OneDrive/Desktop/web developer/Kütüphane yönetim/Kütüphane Yönetim/Kütüphane Yönetim/Views/ÖdünçKayıtları/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncw5Zkw7xuw6dLYXnEsXRsYXLEsVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mert_/OneDrive/Desktop/web developer/Kütüphane yönetim/Kütüphane Yönetim/Kütüphane Yönetim/Views/ÖdünçKayıtları/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncw5Zkw7xuw6dLYXnEsXRsYXLEsVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mert_/OneDrive/Desktop/web developer/Kütüphane yönetim/Kütüphane Yönetim/Kütüphane Yönetim/Views/ÖdünçKayıtları/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncw5Zkw7xuw6dLYXnEsXRsYXLEsVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mert_/OneDrive/Desktop/web developer/Kütüphane yönetim/Kütüphane Yönetim/Kütüphane Yönetim/Views/ÖdünçKayıtları/ÜyeGeçmişi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncw5Zkw7xuw6dLYXnEsXRsYXLEsVzDnHllR2XDp21pxZ9pLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mert_/OneDrive/Desktop/web developer/Kütüphane yönetim/Kütüphane Yönetim/Kütüphane Yönetim/Views/Üyeler/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncw5x5ZWxlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mert_/OneDrive/Desktop/web developer/Kütüphane yönetim/Kütüphane Yönetim/Kütüphane Yönetim/Views/Üyeler/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncw5x5ZWxlclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mert_/OneDrive/Desktop/web developer/Kütüphane yönetim/Kütüphane Yönetim/Kütüphane Yönetim/Views/Üyeler/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncw5x5ZWxlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mert_/OneDrive/Desktop/web developer/Kütüphane yönetim/Kütüphane Yönetim/Kütüphane Yönetim/Views/Üyeler/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncw5x5ZWxlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mert_/OneDrive/Desktop/web developer/Kütüphane yönetim/Kütüphane Yönetim/Kütüphane Yönetim/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-qmwdavpp5g
