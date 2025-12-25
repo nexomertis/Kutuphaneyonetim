@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KutuphaneyYonetim")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a753ed7798e2c68a2a4252797efb17f2002fe5d2")]
 [assembly: System.Reflection.AssemblyProductAttribute("KutuphaneyYonetim")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KutuphaneyYonetim")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

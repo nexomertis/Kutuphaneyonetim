@@ -7,9 +7,9 @@ namespace KutuphaneyYonetim.Controllers
 {
     public class ÖdünçKayıtlarıController : Controller
     {
-        private readonly KutuphaneyYonetimDbContext _context;
+        private readonly KütüphaneDbContext _context;
 
-        public ÖdünçKayıtlarıController(KutuphaneyYonetimDbContext context)
+        public ÖdünçKayıtlarıController(KütüphaneDbContext context)
         {
             _context = context;
         }

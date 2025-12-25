@@ -31,6 +31,26 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="ÖdünçKayıtları" asp-action="Index">Ödünç Kayıtları</a>
                         </li>
                     </ul>
+                    <ul class="navbar-nav">
+                        @if (Context.Session.GetString("KullaniciAd") == null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Hesap" asp-action="GirisYap">Giriş Yap</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Hesap" asp-action="KayitOl">Kayıt Ol</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <span class="nav-link text-dark">Hoş geldin, @Context.Session.GetString("KullaniciAd")</span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Hesap" asp-action="CikisYap">Çıkış Yap</a>
+                            </li>
+                        }
+                    </ul>
                 </div>
             </div>
         </nav>

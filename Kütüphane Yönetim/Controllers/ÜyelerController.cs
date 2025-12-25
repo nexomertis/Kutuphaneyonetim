@@ -6,9 +6,9 @@ namespace KutuphaneyYonetim.Controllers
 {
     public class ÜyelerController : Controller
     {
-        private readonly KutuphaneyYonetimDbContext _context;
+        private readonly KütüphaneDbContext _context;
 
-        public ÜyelerController(KutuphaneyYonetimDbContext context)
+        public ÜyelerController(KütüphaneDbContext context)
         {
             _context = context;
         }

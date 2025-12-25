@@ -4,15 +4,19 @@
 <div class="container mt-5">
     <h2>Kayıt Ol</h2>
     <form method="post">
-    <div class="mb-3">
-        <label for="Ad" class="form-label"> Kullannıcı Adı</label>
-        <input type="text" class="form-control" id="Ad" name="Ad" required />
-       <div class="mb-3">
-           <label for="Email" class="form-label">Email</label>
-           <input type="email" class="form-control" id="Email" name="Email" required />
-
-       </div>
-        
-    </div>
+        <div class="mb-3">
+            <label for="Ad" class="form-label">Kullanıcı Adı</label>
+            <input type="text" class="form-control" id="Ad" name="Ad" required />
+        </div>
+        <div class="mb-3">
+            <label for="Email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="Email" name="Email" required />
+        </div>
+        <div class="mb-3">
+            <label for="Şifre" class="form-label">Şifre</label>
+            <input type="password" class="form-control" id="Şifre" name="Şifre" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Kayıt Ol</button>
     </form>
+    <p class="mt-3">Zaten hesabın var mı? <a asp-action="GirisYap">Giriş Yap</a></p>
 </div>
