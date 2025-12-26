@@ -25,11 +25,32 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Kitaplar" asp-action="Index">Kitaplar</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Üyeler" asp-action="Index">Üyeler</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Kitaplar" asp-action="Ara">Kitap Ara</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="ÖdünçKayıtları" asp-action="Index">Ödünç Kayıtları</a>
-                        </li>
+                        @if (Context.Session.GetString("KullaniciAd") != null && Context.Session.GetString("AdminMi") != "True")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Kitaplar" asp-action="Kitaplarim">Kitaplarım</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Hesap" asp-action="Profilim">Profilim</a>
+                            </li>
+                        }
+                        @if (Context.Session.GetString("AdminMi") == "True")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Üyeler" asp-action="Index">Üyeler</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="ÖdünçKayıtları" asp-action="Index">Ödünç Kayıtları</a>
+                            </li>
+                        }
+                        @if (Context.Session.GetString("KullaniciAd") == null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Hesap" asp-action="AdminGiris">Admin Giriş</a>
+                            </li>
+                        }
                     </ul>
                     <ul class="navbar-nav">
                         @if (Context.Session.GetString("KullaniciAd") == null)

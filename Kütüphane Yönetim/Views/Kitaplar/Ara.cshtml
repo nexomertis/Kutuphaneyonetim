@@ -1,14 +1,21 @@
 @model IEnumerable<KutuphaneyYonetim.Models.Kitap>
 
 @{
-    ViewData["Title"] = "Kitaplar";
+    ViewData["Title"] = "Kitap Ara";
 }
 
-<h1>Kitaplar</h1>
+<h1>Kitap Ara</h1>
 
-@if (Context.Session.GetString("AdminMi") == "True")
+<form method="get" class="mb-4">
+    <div class="input-group" style="max-width: 500px;">
+        <input type="text" class="form-control" name="q" value="@ViewBag.Arama" placeholder="Kitap adı veya yazar ara..." />
+        <button type="submit" class="btn btn-primary">Ara</button>
+    </div>
+</form>
+
+@if (ViewBag.Arama != null)
 {
-    <a href="@Url.Action("Create")" class="btn btn-primary mb-3">Yeni Kitap Ekle</a>
+    <p>@Model.Count() sonuç bulundu.</p>
 }
 
 <div class="row">
@@ -45,11 +52,6 @@
                         {
                             <a href="@Url.Action("OduncAl", new { id = kitap.Id })" class="btn btn-success btn-sm">Ödünç Al</a>
                         }
-                    }
-                    @if (Context.Session.GetString("AdminMi") == "True")
-                    {
-                        <a href="@Url.Action("Edit", new { id = kitap.Id })" class="btn btn-warning btn-sm">Düzenle</a>
-                        <a href="@Url.Action("Delete", new { id = kitap.Id })" class="btn btn-danger btn-sm">Sil</a>
                     }
                 </div>
             </div>

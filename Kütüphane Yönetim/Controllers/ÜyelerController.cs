@@ -21,12 +21,20 @@ namespace KutuphaneyYonetim.Controllers
 
         public IActionResult Create()
         {
+            if (HttpContext.Session.GetString("AdminMi") != "True")
+            {
+                return RedirectToAction("Index");
+            }
             return View();
         }
 
         [HttpPost]
         public IActionResult Create(Üye üye)
         {
+            if (HttpContext.Session.GetString("AdminMi") != "True")
+            {
+                return RedirectToAction("Index");
+            }
             üye.OluşturulmaTarihi = DateTime.Now;
             _context.Üyeler.Add(üye);
             _context.SaveChanges();
@@ -35,6 +43,10 @@ namespace KutuphaneyYonetim.Controllers
 
         public IActionResult Edit(int id)
         {
+            if (HttpContext.Session.GetString("AdminMi") != "True")
+            {
+                return RedirectToAction("Index");
+            }
             var üye = _context.Üyeler.Find(id);
             if (üye == null)
             {
@@ -46,6 +58,10 @@ namespace KutuphaneyYonetim.Controllers
         [HttpPost]
         public IActionResult Edit(int id, Üye üye)
         {
+            if (HttpContext.Session.GetString("AdminMi") != "True")
+            {
+                return RedirectToAction("Index");
+            }
             if (id != üye.Id)
             {
                 return NotFound();
@@ -57,6 +73,10 @@ namespace KutuphaneyYonetim.Controllers
 
         public IActionResult Delete(int id)
         {
+            if (HttpContext.Session.GetString("AdminMi") != "True")
+            {
+                return RedirectToAction("Index");
+            }
             var üye = _context.Üyeler.Find(id);
             if (üye == null)
             {
@@ -68,6 +88,10 @@ namespace KutuphaneyYonetim.Controllers
         [HttpPost, ActionName("Delete")]
         public IActionResult DeleteConfirmed(int id)
         {
+            if (HttpContext.Session.GetString("AdminMi") != "True")
+            {
+                return RedirectToAction("Index");
+            }
             var üye = _context.Üyeler.Find(id);
             if (üye != null)
             {

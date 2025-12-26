@@ -32,8 +32,16 @@ namespace KutuphaneyYonetim.Data
             // Örnek kitaplar ekle
             var kitaplar = new Kitap[]
             {
-                new Kitap { Baslik = "C# Programlama", Yazar = "Mehmet Aydın", ISBN = "978-1234567890", ToplamKopya = 5, MevcutKopya = 5, OluşturulmaTarihi = DateTime.Now },
-                new Kitap { Baslik = "ASP.NET Core", Yazar = "Fatih Kadir", ISBN = "978-0987654321", ToplamKopya = 3, MevcutKopya = 3, OluşturulmaTarihi = DateTime.Now }
+                new Kitap { Baslik = "Alex De Souza", Yazar = "Marcos Eduardo Neves", ISBN = "978-1111111111", ResimUrl = "/images/Alex De Souza.jpg", ToplamKopya = 4, MevcutKopya = 4, OluşturulmaTarihi = DateTime.Now },
+                new Kitap { Baslik = "Cristoph Daum", Yazar = "Cristoph Daum", ISBN = "978-2222222222", ResimUrl = "/images/Cristoph Daum.jpg", ToplamKopya = 3, MevcutKopya = 3, OluşturulmaTarihi = DateTime.Now },
+                new Kitap { Baslik = "Görünmez Adam", Yazar = "H.G. Wells", ISBN = "978-3333333333", ResimUrl = "/images/Görünmez Adam.jpg", ToplamKopya = 5, MevcutKopya = 5, OluşturulmaTarihi = DateTime.Now },
+                new Kitap { Baslik = "Kocaman Bir Adam", Yazar = "Barış Tut", ISBN = "978-4444444444", ResimUrl = "/images/Kocaman bir adam.jpg", ToplamKopya = 3, MevcutKopya = 3, OluşturulmaTarihi = DateTime.Now },
+                new Kitap { Baslik = "Sarı Lacivert Öfkeli Adam", Yazar = "Aytunç Erkin", ISBN = "978-5555555555", ResimUrl = "/images/sari lacivert öfkeli adam aziz yildirim.png", ToplamKopya = 6, MevcutKopya = 6, OluşturulmaTarihi = DateTime.Now },
+                new Kitap { Baslik = "Sefiller", Yazar = "Victor Hugo", ISBN = "978-6666666666", ResimUrl = "/images/sefiller.jpg", ToplamKopya = 4, MevcutKopya = 4, OluşturulmaTarihi = DateTime.Now },
+                new Kitap { Baslik = "Şeker Portakalı", Yazar = "Jose Mauro de Vasconcelos", ISBN = "978-7777777777", ResimUrl = "/images/Şeker Portakalı.webp", ToplamKopya = 7, MevcutKopya = 7, OluşturulmaTarihi = DateTime.Now },
+                new Kitap { Baslik = "Suç ve Ceza", Yazar = "Dostoyevski", ISBN = "978-8888888888", ResimUrl = "/images/Suç Ve ceza.png", ToplamKopya = 5, MevcutKopya = 5, OluşturulmaTarihi = DateTime.Now },
+                new Kitap { Baslik = "The Witcher", Yazar = "Andrzej Sapkowski", ISBN = "978-9999999999", ResimUrl = "/images/The witcher.jpg", ToplamKopya = 4, MevcutKopya = 4, OluşturulmaTarihi = DateTime.Now },
+                new Kitap { Baslik = "Yüzen Dünya", Yazar = "Axie Oh", ISBN = "978-1010101010", ResimUrl = "/images/Yüzen Dünya.jpg", ToplamKopya = 3, MevcutKopya = 3, OluşturulmaTarihi = DateTime.Now }
             };
 
             foreach (Kitap k in kitaplar)

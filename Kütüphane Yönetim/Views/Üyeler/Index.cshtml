@@ -6,7 +6,10 @@
 
 <h1>Üyeler</h1>
 
-<a href="@Url.Action("Create")" class="btn btn-primary mb-3">Yeni Üye Ekle</a>
+@if (Context.Session.GetString("AdminMi") == "True")
+{
+    <a href="@Url.Action("Create")" class="btn btn-primary mb-3">Yeni Üye Ekle</a>
+}
 
 <table class="table table-striped">
     <thead>
@@ -29,8 +32,11 @@
                 <td>@üye.Email</td>
                 <td>@üye.OluşturulmaTarihi.ToString("dd.MM.yyyy")</td>
                 <td>
-                    <a href="@Url.Action("Edit", new { id = üye.Id })" class="btn btn-warning btn-sm">Düzenle</a>
-                    <a href="@Url.Action("Delete", new { id = üye.Id })" class="btn btn-danger btn-sm">Sil</a>
+                    @if (Context.Session.GetString("AdminMi") == "True")
+                    {
+                        <a href="@Url.Action("Edit", new { id = üye.Id })" class="btn btn-warning btn-sm">Düzenle</a>
+                        <a href="@Url.Action("Delete", new { id = üye.Id })" class="btn btn-danger btn-sm">Sil</a>
+                    }
                     <a href="@Url.Action("ÜyeGeçmişi", "ÖdünçKayıtları", new { id = üye.Id })" class="btn btn-info btn-sm">Geçmiş</a>
                 </td>
             </tr>

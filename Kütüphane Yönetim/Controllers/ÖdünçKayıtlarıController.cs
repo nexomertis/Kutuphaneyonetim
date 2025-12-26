@@ -16,12 +16,20 @@ namespace KutuphaneyYonetim.Controllers
 
         public IActionResult Index()
         {
+            if (HttpContext.Session.GetString("AdminMi") != "True")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             var kayıtlar = _context.ÖdünçKayıtları.Include(o => o.Üye).Include(o => o.Kitap).ToList();
             return View(kayıtlar);
         }
 
         public IActionResult Create()
         {
+            if (HttpContext.Session.GetString("AdminMi") != "True")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             ViewBag.Üyeler = _context.Üyeler.ToList();
             ViewBag.Kitaplar = _context.Kitaplar.Where(k => k.MevcutKopya > 0).ToList();
             return View();
@@ -30,6 +38,10 @@ namespace KutuphaneyYonetim.Controllers
         [HttpPost]
         public IActionResult Create(ÖdünçKaydı kayıt)
         {
+            if (HttpContext.Session.GetString("AdminMi") != "True")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             var kitap = _context.Kitaplar.Find(kayıt.KitapId);
             if (kitap == null || kitap.MevcutKopya <= 0)
             {
@@ -57,6 +69,10 @@ namespace KutuphaneyYonetim.Controllers
 
         public IActionResult Delete(int id)
         {
+            if (HttpContext.Session.GetString("AdminMi") != "True")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             var kayıt = _context.ÖdünçKayıtları.Include(o => o.Üye).Include(o => o.Kitap).FirstOrDefault(o => o.Id == id);
             if (kayıt == null)
             {
@@ -68,6 +84,10 @@ namespace KutuphaneyYonetim.Controllers
         [HttpPost, ActionName("Delete")]
         public IActionResult DeleteConfirmed(int id)
         {
+            if (HttpContext.Session.GetString("AdminMi") != "True")
+            {
+                return RedirectToAction("Index", "Home");
+            }
             var kayıt = _context.ÖdünçKayıtları.Find(id);
             if (kayıt != null)
             {

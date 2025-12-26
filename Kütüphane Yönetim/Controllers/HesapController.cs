@@ -18,9 +18,53 @@ namespace KutuphaneyYonetim.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult KayitOl(Kullanıcı kullanıcı)
+        public IActionResult KayitOl(string Ad, string Soyad, string TelefonNumarası, string Email, string Şifre)
         {
+            // Email ve şifre zorunlu
+            if (string.IsNullOrEmpty(Email) || string.IsNullOrEmpty(Şifre) || string.IsNullOrEmpty(TelefonNumarası))
+            {
+                ViewBag.Hata = "Email, telefon ve şifre zorunludur!";
+                return View();
+            }
+
+            // Email format kontrolü
+            if (!Email.Contains("@") || !Email.Contains("."))
+            {
+                ViewBag.Hata = "Geçerli bir email adresi girin!";
+                return View();
+            }
+
+            if (Şifre.Length < 6)
+            {
+                ViewBag.Hata = "Şifre en az 6 karakter olmalı!";
+                return View();
+            }
+
+            // Email kontrolü
+            if (_context.Kullanıcılar.Any(k => k.Email == Email))
+            {
+                ViewBag.Hata = "Bu email adresi zaten kayıtlı!";
+                return View();
+            }
+
+            var kullanıcı = new Kullanıcı
+            {
+                Ad = Ad ?? "",
+                Email = Email,
+                Şifre = Şifre
+            };
             _context.Kullanıcılar.Add(kullanıcı);
+
+            var üye = new Üye
+            {
+                Ad = Ad ?? "",
+                Soyad = Soyad ?? "",
+                TelefonNumarası = TelefonNumarası,
+                Email = Email,
+                OluşturulmaTarihi = DateTime.Now
+            };
+            _context.Üyeler.Add(üye);
+
             _context.SaveChanges();
             return RedirectToAction("GirisYap");
         }
@@ -41,6 +85,7 @@ namespace KutuphaneyYonetim.Controllers
                  
             }
             HttpContext.Session.SetString("KullaniciAd", kullannici.Ad);
+            HttpContext.Session.SetString("KullaniciEmail", kullannici.Email);
             HttpContext.Session.SetString("AdminMi", kullannici.AdminMi.ToString());
             return RedirectToAction("Index", "Home");
         }
@@ -48,6 +93,41 @@ namespace KutuphaneyYonetim.Controllers
         {
             HttpContext.Session.Clear();
             return RedirectToAction("Index", "Home");
+        }
+        [HttpGet]
+        public IActionResult AdminGiris()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult AdminGiris(string kullaniciAdi, string sifre)
+        {
+            // Sabit admin bilgileri
+            if (kullaniciAdi == "admin" && sifre == "admin123")
+            {
+                HttpContext.Session.SetString("KullaniciAd", "Admin");
+                HttpContext.Session.SetString("AdminMi", "True");
+                return RedirectToAction("Index", "Home");
+            }
+            ViewBag.Hata = "Admin bilgileri hatalı!";
+            return View();
+        }
+
+        public IActionResult Profilim()
+        {
+            var email = HttpContext.Session.GetString("KullaniciEmail");
+            if (email == null)
+            {
+                return RedirectToAction("GirisYap");
+            }
+
+            var üye = _context.Üyeler.FirstOrDefault(u => u.Email == email);
+            if (üye == null)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            return View(üye);
         }
     }
     

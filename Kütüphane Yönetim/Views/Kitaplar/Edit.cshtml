@@ -22,8 +22,16 @@
         <input type="text" class="form-control" id="ISBN" name="ISBN" value="@Model.ISBN" required />
     </div>
     <div class="form-group">
+        <label for="ResimUrl">Resim URL</label>
+        <input type="text" class="form-control" id="ResimUrl" name="ResimUrl" value="@Model.ResimUrl" placeholder="https://..." />
+    </div>
+    <div class="form-group">
         <label for="ToplamKopya">Toplam Kopya</label>
         <input type="number" class="form-control" id="ToplamKopya" name="ToplamKopya" value="@Model.ToplamKopya" required />
+    </div>
+    <div class="form-group">
+        <label for="MevcutKopya">Mevcut Kopya</label>
+        <input type="number" class="form-control" id="MevcutKopya" name="MevcutKopya" value="@Model.MevcutKopya" required />
     </div>
     <div class="form-group">
         <button type="submit" class="btn btn-primary">Güncelle</button>

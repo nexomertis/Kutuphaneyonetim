@@ -9,39 +9,81 @@
 
 <hr />
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
-    
-    <div class="card">
-        <div class="card-body">
-            <h4 style="text-align: center; margin-bottom: 15px;">📖 Kitaplar</h4>
-            <p>Kütüphanedeki kitapları ekleyin, düzenleyin ve yönetin.</p>
-            <div style="text-align: center; margin-top: 15px;">
-                <a href="@Url.Action("Index", "Kitaplar")" class="btn btn-primary btn-sm">Listele</a>
-                <a href="@Url.Action("Create", "Kitaplar")" class="btn btn-secondary btn-sm">Ekle</a>
+@if (Context.Session.GetString("KullaniciAd") == null)
+{
+    <div style="text-align: center; margin: 50px 0;">
+        <h3>Hoş Geldiniz!</h3>
+        <p>Kitaplarımızı görmek ve ödünç almak için giriş yapın veya kayıt olun.</p>
+        <div style="margin-top: 20px;">
+            <a href="@Url.Action("GirisYap", "Hesap")" class="btn btn-primary btn-lg">Giriş Yap</a>
+            <a href="@Url.Action("KayitOl", "Hesap")" class="btn btn-success btn-lg">Kayıt Ol</a>
+        </div>
+    </div>
+}
+else if (Context.Session.GetString("AdminMi") == "True")
+{
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
+        <div class="card">
+            <div class="card-body">
+                <h4 style="text-align: center; margin-bottom: 15px;">📖 Kitaplar</h4>
+                <p>Kütüphanedeki kitapları ekleyin, düzenleyin ve yönetin.</p>
+                <div style="text-align: center; margin-top: 15px;">
+                    <a href="@Url.Action("Index", "Kitaplar")" class="btn btn-primary btn-sm">Listele</a>
+                    <a href="@Url.Action("Create", "Kitaplar")" class="btn btn-secondary btn-sm">Ekle</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 style="text-align: center; margin-bottom: 15px;">👥 Üyeler</h4>
+                <p>Kütüphane üyelerini kaydedin ve yönetin.</p>
+                <div style="text-align: center; margin-top: 15px;">
+                    <a href="@Url.Action("Index", "Üyeler")" class="btn btn-primary btn-sm">Listele</a>
+                    <a href="@Url.Action("Create", "Üyeler")" class="btn btn-secondary btn-sm">Ekle</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 style="text-align: center; margin-bottom: 15px;">📋 Ödünç Kayıtları</h4>
+                <p>Ödünç verilen kitapları takip edin.</p>
+                <div style="text-align: center; margin-top: 15px;">
+                    <a href="@Url.Action("Index", "ÖdünçKayıtları")" class="btn btn-primary btn-sm">Listele</a>
+                    <a href="@Url.Action("Create", "ÖdünçKayıtları")" class="btn btn-secondary btn-sm">Ekle</a>
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="card">
-        <div class="card-body">
-            <h4 style="text-align: center; margin-bottom: 15px;">👥 Üyeler</h4>
-            <p>Kütüphane üyelerini kaydedin ve yönetin.</p>
-            <div style="text-align: center; margin-top: 15px;">
-                <a href="@Url.Action("Index", "Üyeler")" class="btn btn-primary btn-sm">Listele</a>
-                <a href="@Url.Action("Create", "Üyeler")" class="btn btn-secondary btn-sm">Ekle</a>
+}
+else
+{
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
+        <div class="card">
+            <div class="card-body">
+                <h4 style="text-align: center; margin-bottom: 15px;">📖 Kitaplar</h4>
+                <p>Kütüphanedeki kitapları görüntüle ve ödünç al.</p>
+                <div style="text-align: center; margin-top: 15px;">
+                    <a href="@Url.Action("Index", "Kitaplar")" class="btn btn-primary btn-sm">Kitaplara Git</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 style="text-align: center; margin-bottom: 15px;">📚 Kitaplarım</h4>
+                <p>Ödünç aldığın kitapları görüntüle ve iade et.</p>
+                <div style="text-align: center; margin-top: 15px;">
+                    <a href="@Url.Action("Kitaplarim", "Kitaplar")" class="btn btn-success btn-sm">Kitaplarıma Git</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 style="text-align: center; margin-bottom: 15px;">👤 Profilim</h4>
+                <p>Profil bilgilerini ve ödünç geçmişini görüntüle.</p>
+                <div style="text-align: center; margin-top: 15px;">
+                    <a href="@Url.Action("Profilim", "Hesap")" class="btn btn-info btn-sm">Profilime Git</a>
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="card">
-        <div class="card-body">
-            <h4 style="text-align: center; margin-bottom: 15px;">📋 Ödünç Kayıtları</h4>
-            <p>Ödünç verilen kitapları takip edin.</p>
-            <div style="text-align: center; margin-top: 15px;">
-                <a href="@Url.Action("Index", "ÖdünçKayıtları")" class="btn btn-primary btn-sm">Listele</a>
-                <a href="@Url.Action("Create", "ÖdünçKayıtları")" class="btn btn-secondary btn-sm">Ekle</a>
-            </div>
-        </div>
-    </div>
-
-</div>
+}

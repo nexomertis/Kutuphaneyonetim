@@ -1,0 +1,56 @@
+@model IEnumerable<KutuphaneyYonetim.Models.ÖdünçKaydı>
+
+@{
+    ViewData["Title"] = "Ödünç Geçmişim";
+}
+
+<h1>Ödünç Geçmişim</h1>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">Henüz ödünç aldığınız kitap bulunmuyor.</div>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Kitap</th>
+                <th>Ödünç Tarihi</th>
+                <th>İade Tarihi</th>
+                <th>Durum</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var kayıt in Model)
+            {
+                <tr>
+                    <td>@kayıt.Kitap.Baslik</td>
+                    <td>@kayıt.ÖdünçTarihi.ToString("dd.MM.yyyy")</td>
+                    <td>
+                        @if (kayıt.İadeTarihi != null)
+                        {
+                            @kayıt.İadeTarihi.Value.ToString("dd.MM.yyyy")
+                        }
+                        else
+                        {
+                            <span>-</span>
+                        }
+                    </td>
+                    <td>
+                        @if (kayıt.İadeTarihi != null)
+                        {
+                            <span class="badge bg-success">İade Edildi</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-warning">Devam Ediyor</span>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<a href="@Url.Action("Profilim", "Hesap")" class="btn btn-secondary">Profilime Dön</a>
