@@ -1,0 +1,45 @@
+@model IEnumerable<KutuphaneyYonetim.Models.Üye>
+
+@{
+    ViewData["Title"] = "Üyeler";
+}
+
+<h1>Üyeler</h1>
+
+@if (Context.Session.GetString("AdminMi") == "True")
+{
+    <a href="@Url.Action("Create")" class="btn btn-primary mb-3">Yeni Üye Ekle</a>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Ad</th>
+            <th>Soyadı</th>
+            <th>Telefon Numarası</th>
+            <th>Email</th>
+            <th>Kayıt Tarihi</th>
+            <th>İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var üye in Model)
+        {
+            <tr>
+                <td>@üye.Ad</td>
+                <td>@üye.Soyad</td>
+                <td>@üye.TelefonNumarası</td>
+                <td>@üye.Email</td>
+                <td>@üye.OluşturulmaTarihi.ToString("dd.MM.yyyy")</td>
+                <td>
+                    @if (Context.Session.GetString("AdminMi") == "True")
+                    {
+                        <a href="@Url.Action("Edit", new { id = üye.Id })" class="btn btn-warning btn-sm">Düzenle</a>
+                        <a href="@Url.Action("Delete", new { id = üye.Id })" class="btn btn-danger btn-sm">Sil</a>
+                    }
+                    <a href="@Url.Action("ÜyeGeçmişi", "ÖdünçKayıtları", new { id = üye.Id })" class="btn btn-info btn-sm">Geçmiş</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,198 @@
+@model IEnumerable<KutuphaneyYonetim.Models.Kitap>
+
+@{
+    ViewData["Title"] = "Kitap Ara";
+}
+
+@functions {
+    string GetKategoriRenk(string kategori)
+    {
+        return kategori switch
+        {
+            "Roman" => "#A8D4F0",
+            "Biyografi" => "#B5EAD7",
+            "Bilim Kurgu" => "#D4A5E8",
+            "Fantastik" => "#FFEAA7",
+            "Tarih" => "#D5D5D5",
+            "Spor" => "#FFB3BA",
+            "Klasik" => "#A0A0A0",
+            "Macera" => "#7DD3E8",
+            _ => "#E0E0E0"
+        };
+    }
+}
+
+<style>
+    .ara-baslik {
+        color: #5BBDD4;
+        font-weight: 600;
+    }
+    .ara-input {
+        border: 2px solid #B8E6F0;
+        border-radius: 25px 0 0 25px;
+        padding: 12px 20px;
+        transition: all 0.3s ease;
+    }
+    .ara-input:focus {
+        border-color: #5BBDD4;
+        box-shadow: 0 0 0 3px rgba(91, 189, 212, 0.15);
+    }
+    .btn-ara {
+        background: linear-gradient(135deg, #5BBDD4, #4AAFC5);
+        border: none;
+        border-radius: 0 25px 25px 0;
+        padding: 12px 25px;
+        color: white;
+        font-weight: 500;
+    }
+    .btn-ara:hover {
+        background: linear-gradient(135deg, #4AAFC5, #3A9FB5);
+        color: white;
+    }
+    .sonuc-text {
+        color: #5BBDD4;
+        font-weight: 500;
+    }
+    .kitap-card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(91, 189, 212, 0.1);
+        transition: all 0.3s ease;
+        overflow: hidden;
+    }
+    .kitap-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(91, 189, 212, 0.2);
+    }
+    .kitap-card .card-body {
+        padding: 1.25rem;
+    }
+    .kitap-baslik {
+        color: #5BBDD4;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .kitap-baslik:hover {
+        color: #4AAFC5;
+    }
+    .kitap-yazar {
+        color: #78909C;
+    }
+    .kategori-badge {
+        padding: 5px 12px;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #2d3748;
+    }
+    .stok-badge-mevcut {
+        background: linear-gradient(135deg, #81C784, #66BB6A);
+        padding: 5px 12px;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        color: white;
+    }
+    .stok-badge-yok {
+        background: linear-gradient(135deg, #E57373, #EF5350);
+        padding: 5px 12px;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        color: white;
+    }
+    .btn-detay {
+        background: linear-gradient(135deg, #5BBDD4, #4AAFC5);
+        border: none;
+        border-radius: 20px;
+        padding: 6px 16px;
+        color: white;
+        font-size: 0.85rem;
+    }
+    .btn-detay:hover {
+        background: linear-gradient(135deg, #4AAFC5, #3A9FB5);
+        color: white;
+    }
+    .btn-odunc {
+        background: linear-gradient(135deg, #81C784, #66BB6A);
+        border: none;
+        border-radius: 20px;
+        padding: 6px 16px;
+        color: white;
+        font-size: 0.85rem;
+    }
+    .btn-odunc:hover {
+        background: linear-gradient(135deg, #66BB6A, #4CAF50);
+        color: white;
+    }
+    .card-footer {
+        background: #F8FDFE;
+        border-top: 1px solid #E0F4F8;
+    }
+</style>
+
+<h1 class="ara-baslik mb-4">Kitap Ara</h1>
+
+<form method="get" class="mb-4">
+    <div class="input-group" style="max-width: 500px;">
+        <input type="text" class="form-control ara-input" name="q" value="@ViewBag.Arama" placeholder="Kitap adı veya yazar ara..." />
+        <button type="submit" class="btn btn-ara">Ara</button>
+    </div>
+</form>
+
+@if (ViewBag.Arama != null)
+{
+    <p class="sonuc-text">@Model.Count() sonuç bulundu.</p>
+}
+
+<div class="row">
+    @foreach (var kitap in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card kitap-card h-100">
+                @if (!string.IsNullOrEmpty(kitap.ResimUrl))
+                {
+                    <img src="@kitap.ResimUrl" class="card-img-top" alt="@kitap.Baslik" style="height: 400px; object-fit: contain; background: #f8f9fa; padding: 10px;">
+                }
+                else
+                {
+                    <img src="https://via.placeholder.com/300x400?text=Kitap" class="card-img-top" alt="@kitap.Baslik" style="height: 400px; object-fit: contain; background: #f8f9fa;">
+                }
+                <div class="card-body">
+                    <span class="kategori-badge mb-2 d-inline-block" style="background-color: @GetKategoriRenk(kitap.Kategori ?? "Genel");">
+                        @(kitap.Kategori ?? "Genel")
+                    </span>
+                    <h5 class="card-title">
+                        <a href="@Url.Action("Detay", new { id = kitap.Id })" class="kitap-baslik">@kitap.Baslik</a>
+                    </h5>
+                    <p class="card-text kitap-yazar">@kitap.Yazar</p>
+                    <p class="card-text">
+                        @if (kitap.MevcutKopya > 0)
+                        {
+                            <span class="stok-badge-mevcut">@kitap.MevcutKopya adet mevcut</span>
+                        }
+                        else
+                        {
+                            <span class="stok-badge-yok">Mevcut değil</span>
+                        }
+                    </p>
+                    <a href="@Url.Action("Detay", new {id = kitap.Id})" class="btn btn-detay">Detay</a>
+                </div>
+                <div class="card-footer">
+                    @if (Context.Session.GetString("KullaniciAd") != null && Context.Session.GetString("AdminMi") != "True")
+                    {
+                        var bugünÖdünçAlındıMı = ViewBag.BugünÖdünçAlinanKitaplar != null &&
+                        ((List<int>)ViewBag.BugünÖdünçAlinanKitaplar).Contains(kitap.Id);
+
+                        @if (kitap.MevcutKopya > 0 && !bugünÖdünçAlındıMı)
+                        {
+                            <a href="@Url.Action("OduncAl", new { id = kitap.Id })" class="btn btn-odunc">Ödünç Al</a>
+                        }
+                        else if (bugünÖdünçAlındıMı)
+                        {
+                            <button class="btn btn-secondary btn-sm" disabled style="border-radius: 20px;">Bugün Ödünç Alındı</button>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,39 @@
+@model KutuphaneyYonetim.Models.ÖdünçKaydı
+
+@{
+    ViewData["Title"] = "Ödünç Kaydı Sil";
+}
+
+<h1>Ödünç Kaydı Sil</h1>
+
+<h3>Bu ödünç kaydını silmek istediğinizden emin misiniz?</h3>
+
+<div>
+    <h4>Ödünç Kaydı Bilgileri</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Üye Adı</dt>
+        <dd class="col-sm-10">@Model.Üye.Ad @Model.Üye.Soyad</dd>
+        <dt class="col-sm-2">Kitap Başlığı</dt>
+        <dd class="col-sm-10">@Model.Kitap.Baslik</dd>
+        <dt class="col-sm-2">Ödünç Tarihi</dt>
+        <dd class="col-sm-10">@Model.ÖdünçTarihi.ToString("dd.MM.yyyy")</dd>
+        <dt class="col-sm-2">İade Tarihi</dt>
+        <dd class="col-sm-10">
+            @if (Model.İadeTarihi.HasValue)
+            {
+                @Model.İadeTarihi.Value.ToString("dd.MM.yyyy")
+            }
+            else
+            {
+                <span>İade Edilmedi</span>
+            }
+        </dd>
+    </dl>
+</div>
+
+<form method="post">
+    <input type="hidden" name="id" value="@Model.Id" />
+    <button type="submit" class="btn btn-danger">Sil</button>
+    <a href="@Url.Action("Index")" class="btn btn-secondary">İptal</a>
+</form>

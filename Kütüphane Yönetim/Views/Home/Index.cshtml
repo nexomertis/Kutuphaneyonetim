@@ -1,0 +1,142 @@
+﻿@{
+    ViewData["Title"] = "Kütüphane Yönetim Sistemi";
+}
+
+<div class="text-center mb-5">
+    <div class="mb-4">
+        <i class="bi bi-book-half" style="font-size: 4rem; color: #2d3748;"></i>
+    </div>
+    <h1 style="color: #2d3748; font-weight: 700;">Kütüphane Yönetim Sistemi</h1>
+    <p style="font-size: 1.1rem; color: #5BBDD4;">Kitapları, üyeleri ve ödünç kayıtlarını kolayca yönetin</p>
+</div>
+
+@if (Context.Session.GetString("KullaniciAd") == null)
+{
+    <div class="welcome-box text-center">
+        <h3 style="color: #2d3748; font-weight: 600;">Hoş Geldiniz!</h3>
+        <p style="color: #4a5568;">Kitaplarımızı görmek ve ödünç almak için giriş yapın veya kayıt olun.</p>
+        <div class="mt-4">
+            <a href="@Url.Action("GirisYap", "Hesap")" class="btn btn-pastel-blue px-4 me-2">
+                <i class="bi bi-box-arrow-in-right me-2"></i>Giriş Yap
+            </a>
+            <a href="@Url.Action("KayitOl", "Hesap")" class="btn btn-outline-pink px-4">
+                <i class="bi bi-person-plus me-2"></i>Kayıt Ol
+            </a>
+        </div>
+    </div>
+}
+else if (Context.Session.GetString("AdminMi") == "True")
+{
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body text-center p-4">
+                    <div class="mb-3">
+                        <i class="bi bi-book" style="font-size: 2.5rem; color: #7DD3E8;"></i>
+                    </div>
+                    <h4>Kitaplar</h4>
+                    <p style="color: #5BBDD4;">Kütüphanedeki kitapları ekleyin, düzenleyin ve yönetin.</p>
+                    <div class="mt-3">
+                        <a href="@Url.Action("Index", "Kitaplar")" class="btn btn-primary btn-sm me-1">
+                            <i class="bi bi-list me-1"></i>Listele
+                        </a>
+                        <a href="@Url.Action("Create", "Kitaplar")" class="btn btn-secondary btn-sm">
+                            <i class="bi bi-plus-lg me-1"></i>Ekle
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body text-center p-4">
+                    <div class="mb-3">
+                        <i class="bi bi-people" style="font-size: 2.5rem; color: #7DD3E8;"></i>
+                    </div>
+                    <h4>Üyeler</h4>
+                    <p style="color: #5BBDD4;">Kütüphane üyelerini kaydedin ve yönetin.</p>
+                    <div class="mt-3">
+                        <a href="@Url.Action("Index", "Üyeler")" class="btn btn-primary btn-sm me-1">
+                            <i class="bi bi-list me-1"></i>Listele
+                        </a>
+                        <a href="@Url.Action("Create", "Üyeler")" class="btn btn-secondary btn-sm">
+                            <i class="bi bi-plus-lg me-1"></i>Ekle
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body text-center p-4">
+                    <div class="mb-3">
+                        <i class="bi bi-journal-text" style="font-size: 2.5rem; color: #7DD3E8;"></i>
+                    </div>
+                    <h4>Ödünç Kayıtları</h4>
+                    <p style="color: #5BBDD4;">Ödünç verilen kitapları takip edin.</p>
+                    <div class="mt-3">
+                        <a href="@Url.Action("Index", "ÖdünçKayıtları")" class="btn btn-primary btn-sm me-1">
+                            <i class="bi bi-list me-1"></i>Listele
+                        </a>
+                        <a href="@Url.Action("Create", "ÖdünçKayıtları")" class="btn btn-secondary btn-sm">
+                            <i class="bi bi-plus-lg me-1"></i>Ekle
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body text-center p-4">
+                    <div class="mb-3">
+                        <i class="bi bi-book" style="font-size: 2.5rem; color: #7DD3E8;"></i>
+                    </div>
+                    <h4>Kitaplar</h4>
+                    <p style="color: #5BBDD4;">Kütüphanedeki kitapları görüntüle ve ödünç al.</p>
+                    <div class="mt-3">
+                        <a href="@Url.Action("Index", "Kitaplar")" class="btn btn-primary">
+                            <i class="bi bi-arrow-right me-1"></i>Kitaplara Git
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body text-center p-4">
+                    <div class="mb-3">
+                        <i class="bi bi-bookmark-star" style="font-size: 2.5rem; color: #7DD3E8;"></i>
+                    </div>
+                    <h4>Kitaplarım</h4>
+                    <p style="color: #5BBDD4;">Ödünç aldığın kitapları görüntüle ve iade et.</p>
+                    <div class="mt-3">
+                        <a href="@Url.Action("Kitaplarim", "Kitaplar")" class="btn btn-primary">
+                            <i class="bi bi-arrow-right me-1"></i>Kitaplarıma Git
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body text-center p-4">
+                    <div class="mb-3">
+                        <i class="bi bi-person-circle" style="font-size: 2.5rem; color: #7DD3E8;"></i>
+                    </div>
+                    <h4>Profilim</h4>
+                    <p style="color: #5BBDD4;">Profil bilgilerini ve ödünç geçmişini görüntüle.</p>
+                    <div class="mt-3">
+                        <a href="@Url.Action("Profilim", "Hesap")" class="btn btn-primary">
+                            <i class="bi bi-arrow-right me-1"></i>Profilime Git
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

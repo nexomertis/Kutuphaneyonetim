@@ -1,0 +1,34 @@
+@model KutuphaneyYonetim.Models.ÖdünçKaydı
+
+@{
+    ViewData["Title"] = "Yeni Ödünç Kaydı Ekle";
+}
+
+<h1>Yeni Ödünç Kaydı Ekle</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label for="ÜyeId">Üye Seçin</label>
+        <select class="form-control" id="ÜyeId" name="ÜyeId" required>
+            <option value="">-- Üye Seçin --</option>
+            @foreach (var üye in ViewBag.Üyeler)
+            {
+                <option value="@üye.Id">@üye.Ad @üye.Soyad</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="KitapId">Kitap Seçin</label>
+        <select class="form-control" id="KitapId" name="KitapId" required>
+            <option value="">-- Kitap Seçin --</option>
+            @foreach (var kitap in ViewBag.Kitaplar)
+            {
+                <option value="@kitap.Id">@kitap.Baslik (@kitap.MevcutKopya mevcut)</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Kaydet</button>
+        <a href="@Url.Action("Index")" class="btn btn-secondary">İptal</a>
+    </div>
+</form>

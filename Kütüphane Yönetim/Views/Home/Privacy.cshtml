@@ -1,0 +1,91 @@
+﻿@{
+    ViewData["Title"] = "Yapımcılar";
+}
+
+<style>
+    .yapimcilar-baslik {
+        color: #5BBDD4;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .yapimci-card {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        border: none;
+        border-radius: 15px;
+        padding: 25px;
+        margin-bottom: 20px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    .yapimci-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(91, 189, 212, 0.2);
+    }
+    .yapimci-isim {
+        color: #2d3748;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    .yapimci-icon {
+        font-size: 3rem;
+        color: #7DD3E8;
+        margin-bottom: 15px;
+    }
+    .takim-bilgi {
+        text-align: center;
+        color: #5BBDD4;
+        margin-top: 30px;
+        padding: 20px;
+        background: rgba(125, 211, 232, 0.1);
+        border-radius: 15px;
+    }
+</style>
+
+<h1 class="yapimcilar-baslik">
+    <i class="bi bi-people-fill me-2"></i>Yapımcılar
+</h1>
+
+<p class="text-center mb-4" style="color: #78909C;">Bu projeyi geliştiren ekip üyeleri</p>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="yapimci-card">
+            <i class="bi bi-person-circle yapimci-icon"></i>
+            <p class="yapimci-isim">Mert Yılmaz</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="yapimci-card">
+            <i class="bi bi-person-circle yapimci-icon"></i>
+            <p class="yapimci-isim">Yağmur Tombul</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="yapimci-card">
+            <i class="bi bi-person-circle yapimci-icon"></i>
+            <p class="yapimci-isim">Reyhan Meşeci</p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="yapimci-card">
+            <i class="bi bi-person-circle yapimci-icon"></i>
+            <p class="yapimci-isim">Eren Tiryaki</p>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="yapimci-card">
+            <i class="bi bi-person-circle yapimci-icon"></i>
+            <p class="yapimci-isim">Murat Acar</p>
+        </div>
+    </div>
+</div>
+
+<div class="takim-bilgi">
+    <i class="bi bi-heart-fill" style="color: #FFB3BA;"></i>
+    <p class="mb-0 mt-2">Kütüphane Yönetim Sistemi - 2025</p>
+</div>

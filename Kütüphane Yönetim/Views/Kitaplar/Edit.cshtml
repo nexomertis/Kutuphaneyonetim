@@ -1,0 +1,125 @@
+@model KutuphaneyYonetim.Models.Kitap
+
+@{
+    ViewData["Title"] = "Kitap Düzenle";
+    var kategoriler = ViewBag.Kategoriler as List<string> ?? new List<string> { "Roman", "Biyografi", "Bilim Kurgu", "Fantastik", "Tarih", "Spor", "Klasik", "Macera" };
+}
+
+<style>
+    .form-baslik {
+        color: #5BBDD4;
+        font-weight: 600;
+    }
+    .form-card {
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 4px 20px rgba(91, 189, 212, 0.15);
+        padding: 2rem;
+    }
+    .form-label {
+        color: #5BBDD4;
+        font-weight: 500;
+    }
+    .form-control, .form-select {
+        border: 2px solid #E0F4F8;
+        border-radius: 10px;
+        padding: 12px 15px;
+        transition: all 0.3s ease;
+    }
+    .form-control:focus, .form-select:focus {
+        border-color: #5BBDD4;
+        box-shadow: 0 0 0 3px rgba(91, 189, 212, 0.15);
+    }
+    .btn-guncelle {
+        background: linear-gradient(135deg, #5BBDD4, #4AAFC5);
+        border: none;
+        border-radius: 25px;
+        padding: 12px 30px;
+        color: white;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+    .btn-guncelle:hover {
+        background: linear-gradient(135deg, #4AAFC5, #3A9FB5);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(91, 189, 212, 0.3);
+        color: white;
+    }
+    .btn-iptal {
+        background: linear-gradient(135deg, #90A4AE, #78909C);
+        border: none;
+        border-radius: 25px;
+        padding: 12px 30px;
+        color: white;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+    .btn-iptal:hover {
+        background: linear-gradient(135deg, #78909C, #607D8B);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(144, 164, 174, 0.3);
+        color: white;
+    }
+    .char-count {
+        color: #78909C;
+        font-size: 0.85rem;
+    }
+</style>
+
+<h1 class="form-baslik mb-4">Kitap Düzenle</h1>
+
+<div class="form-card">
+    <form method="post">
+        <input type="hidden" name="Id" value="@Model.Id" />
+        <div class="form-group mb-3">
+            <label for="Başlık" class="form-label">Kitap Başlığı</label>
+            <input type="text" class="form-control" id="Başlık" name="Baslik" value="@Model.Baslik" required />
+        </div>
+        <div class="form-group mb-3">
+            <label for="Yazar" class="form-label">Yazar</label>
+            <input type="text" class="form-control" id="Yazar" name="Yazar" value="@Model.Yazar" required />
+        </div>
+        <div class="form-group mb-3">
+            <label for="ISBN" class="form-label">ISBN</label>
+            <input type="text" class="form-control" id="ISBN" name="ISBN" value="@Model.ISBN" required />
+        </div>
+        <div class="form-group mb-3">
+            <label for="Kategori" class="form-label">Kategori</label>
+            <select class="form-select" id="Kategori" name="Kategori" required>
+                @foreach (var kat in kategoriler)
+                {
+                    <option value="@kat" selected="@(Model.Kategori == kat)">@kat</option>
+                }
+            </select>
+        </div>
+        <div class="form-group mb-3">
+            <label for="Ozet" class="form-label">Kitap Özeti</label>
+            <textarea class="form-control" id="Ozet" name="Ozet" rows="4" maxlength="1000" oninput="updateCharCount()">@Model.Ozet</textarea>
+            <small class="char-count"><span id="charCount">@(Model.Ozet?.Length ?? 0)</span>/1000 karakter</small>
+        </div>
+        <div class="form-group mb-3">
+            <label for="ResimUrl" class="form-label">Resim URL</label>
+            <input type="text" class="form-control" id="ResimUrl" name="ResimUrl" value="@Model.ResimUrl" placeholder="https://..." />
+        </div>
+        <div class="form-group mb-3">
+            <label for="ToplamKopya" class="form-label">Toplam Kopya</label>
+            <input type="number" class="form-control" id="ToplamKopya" name="ToplamKopya" value="@Model.ToplamKopya" required />
+        </div>
+        <div class="form-group mb-4">
+            <label for="MevcutKopya" class="form-label">Mevcut Kopya</label>
+            <input type="number" class="form-control" id="MevcutKopya" name="MevcutKopya" value="@Model.MevcutKopya" required />
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-guncelle">Güncelle</button>
+            <a href="@Url.Action("Index")" class="btn btn-iptal ms-2">İptal</a>
+        </div>
+    </form>
+</div>
+
+<script>
+    function updateCharCount() {
+        var textarea = document.getElementById('Ozet');
+        var charCount = document.getElementById('charCount');
+        charCount.textContent = textarea.value.length;
+    }
+</script>
