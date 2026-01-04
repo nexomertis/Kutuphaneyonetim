@@ -35,9 +35,11 @@ using (var scope = app.Services.CreateScope())
     var context = services.GetRequiredService<KütüphaneDbContext>();
     try
     {
-        context.Database.EnsureDeleted();
-        context.Database.EnsureCreated();
-        DbInitializer.Initialize(context);
+        context.Database.Migrate();
+        if (!context.Üyeler.Any())
+        {
+            DbInitializer.Initialize(context);
+        }
     }
     catch (Exception ex)
     {
