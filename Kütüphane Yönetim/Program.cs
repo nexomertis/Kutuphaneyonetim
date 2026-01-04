@@ -35,7 +35,8 @@ using (var scope = app.Services.CreateScope())
     var context = services.GetRequiredService<KütüphaneDbContext>();
     try
     {
-        context.Database.Migrate();
+        context.Database.EnsureDeleted();
+        context.Database.EnsureCreated();
         DbInitializer.Initialize(context);
     }
     catch (Exception ex)
