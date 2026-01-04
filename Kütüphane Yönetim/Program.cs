@@ -33,9 +33,15 @@ using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     var context = services.GetRequiredService<KütüphaneDbContext>();
-    context.Database.EnsureDeleted();
-    context.Database.EnsureCreated();
-    DbInitializer.Initialize(context);
+    try
+    {
+        context.Database.Migrate();
+        DbInitializer.Initialize(context);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Veritabanı hatası: {ex.Message}");
+    }
 }
 
 app.Run();
