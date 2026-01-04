@@ -1,0 +1,153 @@
+﻿@model KutuphaneyYonetim.Models.Kitap
+
+@{
+    ViewData["Title"] = Model.Baslik + " - Detay";
+}
+
+@functions {
+    string GetKategoriRenk(string kategori)
+    {
+        return kategori switch
+        {
+            "Roman" => "#A8D4F0",
+            "Biyografi" => "#B5EAD7",
+            "Bilim Kurgu" => "#D4A5E8",
+            "Fantastik" => "#FFEAA7",
+            "Tarih" => "#D5D5D5",
+            "Spor" => "#FFB3BA",
+            "Klasik" => "#A0A0A0",
+            "Macera" => "#7DD3E8",
+            _ => "#E0E0E0"
+        };
+    }
+}
+
+<style>
+    .detay-baslik {
+        color: #5BBDD4;
+        font-weight: 600;
+    }
+    .detay-card {
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(91, 189, 212, 0.15);
+    }
+    .detay-card .card-body {
+        padding: 2rem;
+    }
+    .detay-label {
+        color: #5BBDD4;
+        font-weight: 600;
+    }
+    .detay-value {
+        color: #2d3748;
+    }
+    .ozet-baslik {
+        color: #5BBDD4;
+        font-weight: 600;
+    }
+    .ozet-text {
+        color: #4a5568;
+        line-height: 1.7;
+    }
+    .kategori-badge {
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: #2d3748;
+    }
+    .btn-odunc {
+        background: linear-gradient(135deg, #81C784, #66BB6A);
+        border: none;
+        border-radius: 25px;
+        padding: 10px 25px;
+        color: white;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+    .btn-odunc:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(129, 199, 132, 0.4);
+        color: white;
+    }
+    .btn-geri {
+        background: linear-gradient(135deg, #90A4AE, #78909C);
+        border: none;
+        border-radius: 25px;
+        padding: 10px 25px;
+        color: white;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+    .btn-geri:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(144, 164, 174, 0.4);
+        color: white;
+    }
+    .kitap-resim {
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(91, 189, 212, 0.2);
+    }
+    .stok-yok {
+        color: #E57373;
+        font-weight: 600;
+    }
+</style>
+
+<div class="container mt-4">
+    <h2 class="mb-4 detay-baslik">@Model.Baslik</h2>
+    <div class="row">
+        <div class="col-md-4">
+            @if (!string.IsNullOrEmpty(Model.ResimUrl))
+            {
+                <img src="@Model.ResimUrl" alt="@Model.Baslik" class="img-fluid kitap-resim" />
+            }
+            else
+            {
+                <img src="https://via.placeholder.com/300x400?text=Kitap" alt="@Model.Baslik" class="img-fluid kitap-resim" />
+            }
+        </div>
+        <div class="col-md-8">
+            <div class="card detay-card">
+                <div class="card-body">
+                    <span class="kategori-badge mb-3 d-inline-block" style="background-color: @GetKategoriRenk(Model.Kategori ?? "Genel");">
+                        @(Model.Kategori ?? "Genel")
+                    </span>
+                    <p><span class="detay-label">Yazar:</span> <span class="detay-value">@Model.Yazar</span></p>
+                    <p><span class="detay-label">ISBN:</span> <span class="detay-value">@Model.ISBN</span></p>
+                    <p><span class="detay-label">Toplam Kopya:</span> <span class="detay-value">@Model.ToplamKopya</span></p>
+                    <p><span class="detay-label">Mevcut Kopya:</span> <span class="detay-value">@Model.MevcutKopya</span></p>
+                    
+                    <hr style="border-color: #E0F4F8;" />
+                    
+                    <h5 class="ozet-baslik">Kitap Özeti</h5>
+                    <p class="ozet-text">
+                        @if (!string.IsNullOrEmpty(Model.Ozet))
+                        {
+                            @Model.Ozet
+                        }
+                        else
+                        {
+                            <em>Özet bulunmamaktadır.</em>
+                        }
+                    </p>
+                    
+                    <hr style="border-color: #E0F4F8;" />
+                    
+                    <div class="mt-3">
+                        @if (Model.MevcutKopya > 0)
+                        {
+                            <a href="@Url.Action("OduncAl", new { id = Model.Id })" class="btn btn-odunc">Ödünç Al</a>
+                        }
+                        else
+                        {
+                            <span class="stok-yok">Stokta yok</span>
+                        }
+                        <a href="@Url.Action("Index")" class="btn btn-geri ms-2">Geri Dön</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

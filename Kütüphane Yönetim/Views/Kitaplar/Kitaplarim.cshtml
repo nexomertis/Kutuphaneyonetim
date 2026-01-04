@@ -1,0 +1,58 @@
+@model IEnumerable<KutuphaneyYonetim.Models.ÖdünçKaydı>
+
+@{
+    ViewData["Title"] = "Kitaplarım";
+}
+
+<h1>Ödünç Aldığım Kitaplar</h1>
+
+@if (TempData["Mesaj"] != null)
+{
+    <div class="alert alert-success">@TempData["Mesaj"]</div>
+}
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">Henüz ödünç aldığınız kitap bulunmuyor.</div>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Başlık</th>
+                <th>Yazar</th>
+                <th>Ödünç Tarihi</th>
+                <th>Son İade Tarihi</th>
+                <th>Durum</th>
+                <th>İşlemler</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var kayıt in Model)
+            {
+                <tr class="@(kayıt.GecikmisMi ? "table-danger" : "")">
+                    <td>@kayıt.Kitap.Baslik</td>
+                    <td>@kayıt.Kitap.Yazar</td>
+                    <td>@kayıt.ÖdünçTarihi.ToString("dd.MM.yyyy")</td>
+                    <td>@kayıt.SonİadeTarihi.ToString("dd.MM.yyyy HH:mm")</td>
+                    <td>
+                        @if (kayıt.GecikmisMi)
+                        {
+                            <span class="badge bg-danger">@kayıt.GecikmeDakika dk gecikti!</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-success">Süresinde</span>
+                        }
+                    </td>
+                    <td>
+                        <a href="@Url.Action("IadeEt", new { id = kayıt.KitapId })" class="btn btn-warning btn-sm">İade Et</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<a href="@Url.Action("Index")" class="btn btn-secondary">Tüm Kitaplar</a>

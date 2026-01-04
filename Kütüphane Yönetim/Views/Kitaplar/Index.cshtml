@@ -1,0 +1,170 @@
+@model IEnumerable<KutuphaneyYonetim.Models.Kitap>
+
+@{
+    ViewData["Title"] = "Kitaplar";
+    var kategoriler = ViewBag.Kategoriler as List<string>;
+    var secilenKategori = ViewBag.SecilenKategori as string;
+}
+
+@functions {
+    string GetKategoriRenk(string kategori)
+    {
+        return kategori switch
+        {
+            "Roman" => "pastel-blue",
+            "Biyografi" => "pastel-cyan",
+            "Bilim Kurgu" => "pastel-purple",
+            "Fantastik" => "pastel-yellow",
+            "Tarih" => "pastel-gray",
+            "Spor" => "pastel-red",
+            "Klasik" => "pastel-dark",
+            "Macera" => "pastel-teal",
+            _ => "light"
+        };
+    }
+}
+
+<style>
+    .bg-pastel-blue { background-color: #A8D4F0 !important; color: #2d3748 !important; }
+    .bg-pastel-cyan { background-color: #B5EAD7 !important; color: #2d3748 !important; }
+    .bg-pastel-purple { background-color: #D4A5E8 !important; color: #2d3748 !important; }
+    .bg-pastel-yellow { background-color: #FFEAA7 !important; color: #2d3748 !important; }
+    .bg-pastel-gray { background-color: #D5D5D5 !important; color: #2d3748 !important; }
+    .bg-pastel-red { background-color: #FFB3BA !important; color: #2d3748 !important; }
+    .bg-pastel-dark { background-color: #A0A0A0 !important; color: white !important; }
+    .bg-pastel-teal { background-color: #7DD3E8 !important; color: #2d3748 !important; }
+    
+    .btn-pastel-blue { background-color: #A8D4F0 !important; border-color: #A8D4F0 !important; color: #2d3748 !important; }
+    .btn-pastel-cyan { background-color: #B5EAD7 !important; border-color: #B5EAD7 !important; color: #2d3748 !important; }
+    .btn-pastel-purple { background-color: #D4A5E8 !important; border-color: #D4A5E8 !important; color: #2d3748 !important; }
+    .btn-pastel-yellow { background-color: #FFEAA7 !important; border-color: #FFEAA7 !important; color: #2d3748 !important; }
+    .btn-pastel-gray { background-color: #D5D5D5 !important; border-color: #D5D5D5 !important; color: #2d3748 !important; }
+    .btn-pastel-red { background-color: #FFB3BA !important; border-color: #FFB3BA !important; color: #2d3748 !important; }
+    .btn-pastel-dark { background-color: #A0A0A0 !important; border-color: #A0A0A0 !important; color: white !important; }
+    .btn-pastel-teal { background-color: #7DD3E8 !important; border-color: #7DD3E8 !important; color: #2d3748 !important; }
+    
+    .btn-outline-pastel-blue { border-color: #A8D4F0 !important; color: #5a9bc7 !important; background: transparent !important; }
+    .btn-outline-pastel-cyan { border-color: #B5EAD7 !important; color: #5ab89e !important; background: transparent !important; }
+    .btn-outline-pastel-purple { border-color: #D4A5E8 !important; color: #9b59b6 !important; background: transparent !important; }
+    .btn-outline-pastel-yellow { border-color: #FFEAA7 !important; color: #c9a227 !important; background: transparent !important; }
+    .btn-outline-pastel-gray { border-color: #D5D5D5 !important; color: #777 !important; background: transparent !important; }
+    .btn-outline-pastel-red { border-color: #FFB3BA !important; color: #e74c3c !important; background: transparent !important; }
+    .btn-outline-pastel-dark { border-color: #A0A0A0 !important; color: #555 !important; background: transparent !important; }
+    .btn-outline-pastel-teal { border-color: #7DD3E8 !important; color: #5BBDD4 !important; background: transparent !important; }
+    
+    .btn-outline-pastel-blue:hover { background-color: #A8D4F0 !important; color: #2d3748 !important; }
+    .btn-outline-pastel-cyan:hover { background-color: #B5EAD7 !important; color: #2d3748 !important; }
+    .btn-outline-pastel-purple:hover { background-color: #D4A5E8 !important; color: #2d3748 !important; }
+    .btn-outline-pastel-yellow:hover { background-color: #FFEAA7 !important; color: #2d3748 !important; }
+    .btn-outline-pastel-gray:hover { background-color: #D5D5D5 !important; color: #2d3748 !important; }
+    .btn-outline-pastel-red:hover { background-color: #FFB3BA !important; color: #2d3748 !important; }
+    .btn-outline-pastel-dark:hover { background-color: #A0A0A0 !important; color: white !important; }
+    .btn-outline-pastel-teal:hover { background-color: #7DD3E8 !important; color: #2d3748 !important; }
+</style>
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="mb-0" style="color: #2d3748;">Kitaplar</h1>
+    @if (Context.Session.GetString("AdminMi") == "True")
+    {
+        <a href="@Url.Action("Create")" class="btn btn-primary">
+            <i class="bi bi-plus-lg"></i> Yeni Kitap Ekle
+        </a>
+    }
+</div>
+
+<div class="card mb-4" style="border: none; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+    <div class="card-body py-3">
+        <div class="d-flex flex-wrap gap-2 align-items-center">
+            <span style="color: #5BBDD4;" class="me-2"><strong>Kategoriler:</strong></span>
+            <a href="@Url.Action("Index")" 
+               class="btn @(string.IsNullOrEmpty(secilenKategori) ? "btn-primary" : "btn-outline-secondary") btn-sm rounded-pill px-3">
+                Tümü
+            </a>
+            @if (kategoriler != null)
+            {
+                @foreach (var kat in kategoriler)
+                {
+                    var renk = GetKategoriRenk(kat);
+                    var aktifMi = secilenKategori == kat;
+                    <a href="@Url.Action("Index", new { kategori = kat })" 
+                       class="btn @(aktifMi ? $"btn-{renk}" : $"btn-outline-{renk}") btn-sm rounded-pill px-3">
+                        @kat
+                    </a>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+@if (!string.IsNullOrEmpty(secilenKategori))
+{
+    <div class="alert d-flex justify-content-between align-items-center py-2" style="background: rgba(125, 211, 232, 0.2); border: 1px solid #7DD3E8; color: #4A9BAD;">
+        <span>
+            <strong>@secilenKategori</strong> kategorisinde <strong>@Model.Count()</strong> kitap bulundu.
+        </span>
+        <a href="@Url.Action("Index")" class="btn btn-sm btn-primary">
+            Filtreyi Temizle
+        </a>
+    </div>
+}
+
+<div class="row">
+    @foreach (var kitap in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                @if (!string.IsNullOrEmpty(kitap.ResimUrl))
+                {
+                    <img src="@kitap.ResimUrl" class="card-img-top" alt="@kitap.Baslik" style="height: 400px; object-fit: contain; background: #f8f9fa; padding: 10px;">
+                }
+                else
+                {
+                    <img src="https://via.placeholder.com/300x400?text=Kitap" class="card-img-top" alt="@kitap.Baslik" style="height: 400px; object-fit: contain; background: #f8f9fa;">
+                }
+                <div class="card-body">
+                    <span class="badge bg-@GetKategoriRenk(kitap.Kategori ?? "Genel") mb-2">
+                        @(kitap.Kategori ?? "Genel")
+                    </span>
+                    <h5 class="card-title">
+                        <a href="@Url.Action("Detay", new { id = kitap.Id })" class="text-decoration-none" style="color: #2d3748;">@kitap.Baslik</a>
+                    </h5>
+                    <p class="card-text" style="color: #5BBDD4;">@kitap.Yazar</p>
+                    <p class="card-text">
+                        @if (kitap.MevcutKopya > 0)
+                        {
+                            <span class="badge bg-success">@kitap.MevcutKopya adet mevcut</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">Mevcut değil</span>
+                        }
+                    </p>
+                    <a href="@Url.Action("Detay", new {id = kitap.Id})" class="btn btn-primary btn-sm">Detay</a>
+                </div>
+                <div class="card-footer" style="background: #f8fafc; border-top: 1px solid #e2e8f0;">
+                    @if (Context.Session.GetString("KullaniciAd") != null && Context.Session.GetString("AdminMi") != "True")
+                    {
+                        
+                           var bugunÖdünçAlındıMı = ViewBag.BugünÖdünçAlinanKitaplar != null && ((List<int>)ViewBag.BugünÖdünçAlinanKitaplar).Contains(kitap.Id);
+                        
+
+                        @if (kitap.MevcutKopya > 0 && !bugunÖdünçAlındıMı)
+                        {
+                            <a href="@Url.Action("OduncAl", new { id = kitap.Id })" class="btn btn-success btn-sm">Ödünç Al</a>
+                        }
+                        else if (bugunÖdünçAlındıMı)
+                        {
+                            <button class="btn btn-secondary btn-sm" disabled>Bugün Ödünç Alındı</button>
+                        }
+                        
+                    }
+                    @if (Context.Session.GetString("AdminMi") == "True")
+                    {
+                        <a href="@Url.Action("Edit", new { id = kitap.Id })" class="btn btn-warning btn-sm">Düzenle</a>
+                        <a href="@Url.Action("Delete", new { id = kitap.Id })" class="btn btn-danger btn-sm">Sil</a>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>
