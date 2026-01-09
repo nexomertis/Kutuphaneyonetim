@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Admin Giriş";
+}
+<div class="container mt-5">
+    <h2>Admin Giriş</h2>
+    @if (ViewBag.Hata != null)
+    {
+        <div class="alert alert-danger">@ViewBag.Hata</div>
+    }
+    <form method="post">
+        <div class="mb-3">
+            <label for="kullaniciAdi" class="form-label">Kullanıcı Adı</label>
+            <input type="text" class="form-control" id="kullaniciAdi" name="kullaniciAdi" required />
+        </div>
+        <div class="mb-3">
+            <label for="sifre" class="form-label">Şifre</label>
+            <input type="password" class="form-control" id="sifre" name="sifre" required />
+        </div>
+        <button type="submit" class="btn btn-danger">Giriş Yap</button>
+    </form>
+</div>

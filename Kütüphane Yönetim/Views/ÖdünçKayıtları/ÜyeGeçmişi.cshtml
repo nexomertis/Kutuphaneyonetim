@@ -1,0 +1,60 @@
+@model IEnumerable<KutuphaneyYonetim.Models.ÖdünçKaydı>
+
+@{
+    ViewData["Title"] = "Üye Ödünç Geçmişi";
+}
+
+<h1>Üye Ödünç Geçmişi</h1>
+
+<a href="@Url.Action("Index", "ÖdünçKayıtları")" class="btn btn-secondary mb-3">Geri Dön</a>
+
+@if (Model.Any())
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Kitap Başlığı</th>
+                <th>Yazar</th>
+                <th>Ödünç Tarihi</th>
+                <th>İade Tarihi</th>
+                <th>Durum</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var kayıt in Model)
+            {
+                <tr>
+                    <td>@kayıt.Kitap.Baslik</td>
+                    <td>@kayıt.Kitap.Yazar</td>
+                    <td>@kayıt.ÖdünçTarihi.ToString("dd.MM.yyyy")</td>
+                    <td>
+                        @if (kayıt.İadeTarihi.HasValue)
+                        {
+                            @kayıt.İadeTarihi.Value.ToString("dd.MM.yyyy")
+                        }
+                        else
+                        {
+                            <span class="badge badge-warning">İade Edilmedi</span>
+                        }
+                    </td>
+                    <td>
+                        @if (kayıt.İadeTarihi.HasValue)
+                        {
+                            <span class="badge badge-success">Tamamlandı</span>
+                        }
+                        else
+                        {
+                            <span class="badge badge-info">Devam Ediyor</span>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="alert alert-info">
+        Bu üyenin henüz ödünç kaydı bulunmamaktadır.
+    </div>
+}

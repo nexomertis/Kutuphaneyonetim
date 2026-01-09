@@ -1,0 +1,30 @@
+@model KutuphaneyYonetim.Models.Üye
+
+@{
+    ViewData["Title"] = "Üye Sil";
+}
+
+<h1>Üye Sil</h1>
+
+<h3>Bu üyeyi silmek istediğinizden emin misiniz?</h3>
+
+<div>
+    <h4>Üye Bilgileri</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Ad</dt>
+        <dd class="col-sm-10">@Model.Ad</dd>
+        <dt class="col-sm-2">Soyadı</dt>
+        <dd class="col-sm-10">@Model.Soyad</dd>
+        <dt class="col-sm-2">Telefon Numarası</dt>
+        <dd class="col-sm-10">@Model.TelefonNumarası</dd>
+        <dt class="col-sm-2">Email</dt>
+        <dd class="col-sm-10">@Model.Email</dd>
+    </dl>
+</div>
+
+<form method="post">
+    <input type="hidden" name="id" value="@Model.Id" />
+    <button type="submit" class="btn btn-danger">Sil</button>
+    <a href="@Url.Action("Index")" class="btn btn-secondary">İptal</a>
+</form>

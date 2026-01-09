@@ -1,0 +1,80 @@
+﻿@{
+    ViewData["Title"] = "Kayıt Ol";
+}
+<div class="container mt-5">
+    <h2>Kayıt Ol</h2>
+    @if (ViewBag.Hata != null)
+    {
+        <div class="alert alert-danger">@ViewBag.Hata</div>
+    }
+    <form method="post" id="kayitForm" novalidate>
+        <div class="mb-3">
+            <label for="Ad" class="form-label">Ad</label>
+            <input type="text" class="form-control" id="Ad" name="Ad" />
+        </div>
+        <div class="mb-3">
+            <label for="Soyad" class="form-label">Soyad</label>
+            <input type="text" class="form-control" id="Soyad" name="Soyad" />
+        </div>
+        <div class="mb-3">
+            <label for="TelefonNumarası" class="form-label">Telefon Numarası</label>
+            <input type="text" class="form-control" id="TelefonNumarası" name="TelefonNumarası" placeholder="05XX XXX XX XX" />
+            <div class="text-danger" id="telefonHata" style="display:none;">Geçerli bir telefon numarası girin</div>
+        </div>
+        <div class="mb-3">
+            <label for="Email" class="form-label">Email</label>
+            <input type="text" class="form-control" id="Email" name="Email" />
+            <div class="text-danger" id="emailHata" style="display:none;">Geçerli bir email adresi girin</div>
+        </div>
+        <div class="mb-3">
+            <label for="Sifre" class="form-label">Şifre</label>
+            <input type="password" class="form-control" id="Sifre" name="Şifre" />
+            <small class="text-muted">En az 6 karakter</small>
+            <div class="text-danger" id="sifreHata" style="display:none;">Şifre en az 6 karakter olmalı</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+    </form>
+    <p class="mt-3">Zaten hesabın var mı? <a asp-action="GirisYap">Giriş Yap</a></p>
+</div>
+
+<script>
+document.getElementById('kayitForm').addEventListener('submit', function(e) {
+    var email = document.getElementById('Email');
+    var telefon = document.getElementById('TelefonNumarası');
+    var sifre = document.getElementById('Sifre');
+    var valid = true;
+
+    document.getElementById('emailHata').style.display = 'none';
+    document.getElementById('telefonHata').style.display = 'none';
+    document.getElementById('sifreHata').style.display = 'none';
+
+    if (email.value.indexOf('@@') === -1 || email.value.indexOf('.') === -1) {
+        document.getElementById('emailHata').style.display = 'block';
+        email.classList.add('is-invalid');
+        valid = false;
+    } else {
+        email.classList.remove('is-invalid');
+    }
+
+    var telefonTemiz = telefon.value.replace(/\s/g, '');
+    if (!/^[0-9]{10,11}$/.test(telefonTemiz)) {
+        document.getElementById('telefonHata').style.display = 'block';
+        telefon.classList.add('is-invalid');
+        valid = false;
+    } else {
+        telefon.classList.remove('is-invalid');
+    }
+
+    if (sifre.value.length < 6) {
+        document.getElementById('sifreHata').style.display = 'block';
+        sifre.classList.add('is-invalid');
+        valid = false;
+    } else {
+        sifre.classList.remove('is-invalid');
+    }
+
+    if (!valid) {
+        e.preventDefault();
+    }
+});
+</script>
